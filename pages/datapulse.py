@@ -18,10 +18,10 @@ layout = [
                 ], className='header-title')
             ], className='page-header')
         ], className='container p-4')
-    ], className='custom-header mb-3 noselect'),
+    ], className='custom-header mb-4 noselect'),
     html.Div([
         dcc.Graph(
-            id='life-exp-vs-gdp',
+            id='life-exp-vs-gdp-datapulse',
             figure={
                 'data': [
                     dict(
@@ -47,7 +47,7 @@ layout = [
             }
         ),
         dcc.Graph(
-            id='example-graph',
+            id='example-graph-datapulse',
             figure={
                 'data': [
                     {'x': [1, 2, 3], 'y': [4, 1, 2], 'type': 'bar', 'name': 'SF'},
